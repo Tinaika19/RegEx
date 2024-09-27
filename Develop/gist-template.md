@@ -10,10 +10,10 @@ This regular expression is used to validate email addresses. It ensures that the
 ## Table of Contents
 
 - [Anchors](#anchors)
-- [Local Part](#Local Part)
-- [Domain name](#Domain name)
-- [Dot and Domain Extension](#Dot and Domain Extension)
-- [Valid Examples](#Valid Examples)
+- [Local Part](#LocalPart)
+- [Domain name](#Domainname)
+- [Dot and Domain Extension](#DotandDomainExtension)
+- [Valid Examples](#ValidExamples)
 - [Author](#Author)
 
 
