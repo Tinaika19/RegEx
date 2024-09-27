@@ -21,11 +21,12 @@ This regular expression is used to validate email addresses. It ensures that the
 ## Regex Components
 
 ### Anchors
- - `^` asserts the start of the string.
- - `$` asserts the end of the string.
-   These ensure that the entire string is an email address without any extra characters before or after.
+- ^: This is the start anchor, meaning that the pattern should match from the very beginning of the string. It ensures that nothing comes before the start of the email.
+- $: This is the end anchor, which ensures that the match goes all the way to the end of the string. Nothing can appear after the email address.
+Together, ^ and $ ensure that the entire string is evaluated as an email address and prevent extra characters from being included before or after.
 
 ### Local Part
+The local part is the section of the email address before the @ symbol. This regex pattern handles typical characters allowed in an email's local part:
   - `[a-z0-9_\.-]+`: Matches the local part of the email (the part before the `@`).
   - `[a-z0-9]`: Matches any lowercase letter (`a-z`) or digit (`0-9`).
   - `_`: Matches an underscore (`_`).
@@ -34,6 +35,7 @@ This regular expression is used to validate email addresses. It ensures that the
   - The `+` quantifier ensures one or more characters from this set.
 
 ### Domain name
+The domain name is the section of the email address after the @ symbol and before the domain extension (e.g., example in example.com). This pattern allows domain names with valid characters:
    - `[\da-z\.-]+`: Matches the domain part after the `@`.
    - `\d`: Matches any digit (`0-9`).
    - `[a-z]`: Matches any lowercase letter (`a-z`).
