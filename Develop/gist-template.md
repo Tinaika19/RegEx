@@ -53,4 +53,4 @@ This regular expression is used to validate email addresses. It ensures that the
 
 ## Author
 
-This tutorial was created by Tinaika Pereira. I am passionate about web development and enjoy creating content on regex. You can find more of my work on my [GitHub profile](https://github.com/yourusername).
+This tutorial was created by Tinaika Pereira. I am passionate about web development and enjoy creating content on regex. You can find more of my work on my [GitHub profile](https://github.com/Tinaika19).
