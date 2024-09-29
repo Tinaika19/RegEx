@@ -15,6 +15,7 @@ This regular expression is used to validate email addresses. It ensures that the
 - [The @ symbol](#The@symbol)
 - [Dot and Domain Extension](#DotandDomainExtension)
 - [Valid Examples](#ValidExamples)
+- [Full Pattern Examples](#FullPatternExamples)
 - [Author](#Author)
 
 
