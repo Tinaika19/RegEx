@@ -12,6 +12,7 @@ This regular expression is used to validate email addresses. It ensures that the
 - [Anchors](#anchors)
 - [Local Part](#LocalPart)
 - [Domain name](#Domainname)
+- [The @ symbol](#The@symbol)
 - [Dot and Domain Extension](#DotandDomainExtension)
 - [Valid Examples](#ValidExamples)
 - [Author](#Author)
@@ -41,6 +42,8 @@ The domain name is the section of the email address after the @ symbol and befor
    - `[a-z]`: Matches any lowercase letter (`a-z`).
    - `\.`: Matches a literal dot (`.`).
    - `-`: Matches a hyphen (`-`).
+### The @ symbol
+This is the literal at-symbol (@), which separates the local part of the email from the domain part. Every valid email must contain exactly one @ symbol.
 
 ### Dot and Domain Extension
  - `\.` matches the literal dot before the domain extension.
@@ -52,6 +55,19 @@ The domain name is the section of the email address after the @ symbol and befor
 - `john.doe@example.com`
 - `user_name123@mail-server.net`
 - `jane-doe@123mail.co.uk`
+
+### Full Pattern Examples
+Consider the email address john.doe@example.com:
+
+- **Local Part:** john.doe
+- **Lowercase letters** (john), a dot (.), and lowercase letters (doe).
+- **@ Symbol:** Separates the local part and the domain part.
+- **Domain Part:** example
+- **Lowercase letters** (example).
+- **Dot:** A literal dot (.).
+- **Domain Extension:** com
+- **Lowercase letters** (com), and the length (3 characters) is valid.
+This email matches the regex fully.
 
 ## Author
 
